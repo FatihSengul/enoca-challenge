@@ -1,0 +1,24 @@
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/commerce_test?currentSchema=commerce
+    username: postgres
+    password: admin
+  main:
+    allow-circular-references: true
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+
+app:
+  jwt:
+    secret: RandomSecretKey
+    expiration-in-ms: 86400000 # 1 day
+
+authentication:
+  internal-api-key: InternalApiKey1234!
+
+
+
+
